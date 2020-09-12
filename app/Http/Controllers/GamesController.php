@@ -71,12 +71,13 @@ class GamesController extends Controller
         
         // dump($comingSoon);
 
-        return view('index', [
+        // return view('index', [
             // 'popularGames' => $popularGames,
-            'recentlyReviewed' => $recentlyReviewed,
-            'mostAnticipated' => $mostAnticipated,
-            'comingSoon' => $comingSoon,
-        ]);
+            //'recentlyReviewed' => $recentlyReviewed,
+            // 'mostAnticipated' => $mostAnticipated,
+            // 'comingSoon' => $comingSoon,
+       // ]);
+       return view('index');
     }
 
     /**

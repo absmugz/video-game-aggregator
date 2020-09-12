@@ -13,8 +13,6 @@ class PopularGames extends Component
     public function loadPopularGames(){
         $before = Carbon::now()->subMonths(2)->timestamp;
         $after = Carbon::now()->addMonths(2)->timestamp;
-        $current  = Carbon::now()->timestamp;
-        $afterFourMonths = Carbon::now()->addMonths(4)->timestamp;
 
         $this->popularGames = Http::withHeaders(config('services.igdb'))->withOptions([
                         'body' => "
