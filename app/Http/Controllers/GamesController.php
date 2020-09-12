@@ -72,7 +72,7 @@ class GamesController extends Controller
         // dump($comingSoon);
 
         return view('index', [
-            'popularGames' => $popularGames,
+            // 'popularGames' => $popularGames,
             'recentlyReviewed' => $recentlyReviewed,
             'mostAnticipated' => $mostAnticipated,
             'comingSoon' => $comingSoon,
