@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './app/**/*.php',
+    './resources/**/*.php',
+  ],
   theme: {
     spinner: (theme) => ({
       default: {
