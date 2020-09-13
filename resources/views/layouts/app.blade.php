@@ -6,6 +6,7 @@
     <title>Laracasts Video Games</title>
     <link rel="stylesheet" href="/css/main.css">
     @livewireStyles
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body class="bg-gray-900 text-white">
     <header class="border-b border-gray-800">
@@ -21,12 +22,7 @@
                 </ul>
             </div>
             <div class="flex items-center mt-6 lg:mt-0">
-                <div class="relative">
-                    <input type="text" class="bg-gray-800 text-sm rounded-full focus:outline-none focus:shadow-outline w-64 px-3 pl-8 py-1" placeholder="Search...">
-                    <div class="absolute top-0 flex items-center h-full ml-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-current text-grey-400 w-4" ><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                    </div>
-                </div>
+                <livewire:search-dropdown >
                 <div class="ml-6">
                     <a href="#"><img src="/avatar.jpg" alt="avatar" class="rounded-full w-8"></a>
                 </div>
